@@ -1,0 +1,16 @@
+{
+    "name": "1desafio",
+    "version": "1.0.0",
+    "description": "",
+    "type": "module",
+     "main": "productos.js",
+    "scripts": {
+      "dev": "nodemon ./src/productos.js"
+    },
+    "keywords": [],
+    "author": "",
+    "license": "ISC",
+    "devDependencies": {
+      "nodemon": "^3.0.3"
+    }
+  }
