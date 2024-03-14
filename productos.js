@@ -46,9 +46,14 @@ class ProductManager {
         console.log("Producto agregado:", product);
     }
 
-    getProducts() {
-        return this.products;
+    getProducts(limit) {
+        if (limit) {
+            return this.products.slice(0, limit);
+        } else {
+            return this.products;
+        }
     }
+
 
     getProductById(id) {
         const product = this.products.find(p => p.id === id);
@@ -82,7 +87,7 @@ class ProductManager {
         }
     }
 }
-
+module.exports = ProductManager;
 // ej de uso
 const productManager = new ProductManager('productos.json');
 
